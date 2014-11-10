@@ -1,0 +1,17 @@
+# New problem directory for Project Euler solutions
+i=1
+while [ -d "prob-`printf %03d $i`" ]
+do
+	i=$((i + 1))
+done
+
+x=prob-`printf %03d $i`
+
+mkdir "${x}"
+mkdir "${x}/C"
+echo >> "${x}/C/main.c"
+
+cp makefile "${x}/C"
+
+echo "A directory and .c file for ${x} was created."
+echo "I also went ahead and gave you a wee makefile (which may require tailoring)! :)"

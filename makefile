@@ -3,7 +3,7 @@ CXXFLAGS = -c -Wall
 LDFLAGS =
 SOURCES = *.c
 OBJECTS = $(SOURCES:.c=.o)
-EXECUTABLE = even-fibonacci-sum
+EXECUTABLE = run-me
 
 all: $(SOURCES) $(EXECUTABLE)
 
